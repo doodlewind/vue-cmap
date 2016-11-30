@@ -185,7 +185,12 @@ const tileStyle = {
 ```
 
 
+## Custom
+By modifying the `require` code in `modules/loader.js`, you can modify the component size to fit the needs. When onlu contury view is needed, all code loading GeoJSON can be commented out to reduce Webpack chunk size.
+
+
 ## Changelog
+
 * `0.0.3`
     * Add conf interface
     * Add mask on data loading
@@ -194,3 +199,7 @@ const tileStyle = {
     * Add doc
 * `0.0.2` Implement data rendering on city data
 * `0.0.1` Implement switching between country and province views
+
+
+## License
+MIT

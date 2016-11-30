@@ -13,13 +13,6 @@ Vue 中国地图可视化组件，支持 Drilldown 切换国家 / 省份视图
 * 参数化的定制样式
 * 极轻，初始数据量小于 80K
 
-Clone this repo and run example:
-
-``` text
-cd vue-cmap/example
-npm run dev
-```
-
 
 ## Demo
 Clone 本仓库并执行构建：
@@ -197,3 +190,11 @@ const tileStyle = {
   fillOpacity: 0.7        // 边框透明度
 }
 ```
+
+
+## Custom
+可通过定制 `modules/loader.js` 中 `require` 内容，剪裁出适合业务所需省份范围的构建版本，当只需国家视图时，可去除 `china.json` 之外的省份地形数据导入代码，以减小 Webpack 的构建文件数量。
+
+
+## License
+MIT
