@@ -74,8 +74,13 @@
       var map = L.map(this.$el, {
         attributionControl: false,
         zoomControl: conf.hasZoomControl,
+        boxZoom: conf.boxZoom,
+        doubleClickZoom: conf.doubleClickZoom,
+        scrollWheelZoom: conf.scrollWheelZoom,
+        dragging: conf.dragging,
+        minZoom: conf.minZoom,
+        maxZoom: conf.maxZoom,
         maxBounds: conf.countryBounds,
-        minZoom: 3
       }).fitBounds(conf.countryBounds)
 
       if (conf.hasTileLayer) {

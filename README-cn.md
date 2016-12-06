@@ -157,6 +157,31 @@ Type: `Boolean` Default: `true`
 
 是否显示地图缩放控件。
 
+#### boxZoom
+Type: `Boolean` Default: `true`
+
+是否启用 Shift 拖动鼠标的缩放。
+
+#### doubleClickZoom
+Type: `Boolean` Default: `true`
+
+是否启用双击缩放。
+
+#### ScrollWheelZoom
+Type: `Boolean` Default: `true`
+
+是否启用滚轮缩放。
+
+#### minZoom
+Type: `Number` Default: `3`
+
+最低缩放等级。
+
+#### maxZoom
+Type: `Number` Default: `Infinity`
+
+最高缩放等级。
+
 #### countryBounds
 Type: `Array` Default: `[[18, 72], [54, 137]]`
 

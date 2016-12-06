@@ -27,8 +27,8 @@
     created() { conf = Object.assign({}, initConf, this.mapConf) },
     data() {
       return {
-        width: '100%',
-        height: '550px',
+        width: this.mapConf ? (this.mapConf.width ? this.mapConf.width : '100%') : '100%',
+        height: this.mapConf ? (this.mapConf.height ? this.mapConf.height : '550px') : '550px',
         zoomed: false,
         isLoading: false,
         currentTile: null,
@@ -74,8 +74,13 @@
       var map = L.map(this.$el, {
         attributionControl: false,
         zoomControl: conf.hasZoomControl,
+        boxZoom: conf.boxZoom,
+        doubleClickZoom: conf.doubleClickZoom,
+        scrollWheelZoom: conf.scrollWheelZoom,
+        dragging: conf.dragging,
+        minZoom: conf.minZoom,
+        maxZoom: conf.maxZoom,
         maxBounds: conf.countryBounds,
-        minZoom: 3
       }).fitBounds(conf.countryBounds)
 
       if (conf.hasTileLayer) {

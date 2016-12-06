@@ -4,6 +4,12 @@ export default {
   hasCityView: true,
   hasTileLayer: false,
   hasZoomControl: true,
+  boxZoom: true,
+  doubleClickZoom: true,
+  scrollWheelZoom: true,
+  dragging: true,
+  minZoom: 3,
+  maxZoom: Infinity,
   countryBounds: [[18, 72], [54, 137]],
   tileStyle: {
     weight: 2,

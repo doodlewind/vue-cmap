@@ -150,6 +150,31 @@ Type: `Boolean` Default: `true`
 
 Whether to show map zoom control widget.
 
+#### boxZoom
+Type: `Boolean` Default: `true`
+
+Whether to enable box zoom.
+
+#### doubleClickZoom
+Type: `Boolean` Default: `true`
+
+Whether to enable double click zoom.
+
+#### ScrollWheelZoom
+Type: `Boolean` Default: `true`
+
+Whether to enable scroll wheel zoom.
+
+#### minZoom
+Type: `Number` Default: `3`
+
+Min map zoom level.
+
+#### maxZoom
+Type: `Number` Default: `Infinity`
+
+Max map zoom level.
+
 #### countryBounds
 Type: `Array` Default: `[[18, 72], [54, 137]]`
 
@@ -191,6 +216,9 @@ By modifying the `require` code in `modules/loader.js`, you can modify the compo
 
 ## Changelog
 
+* `0.0.4`
+    * Fix width and height style issue
+    * Add zoom conf
 * `0.0.3`
     * Add conf interface
     * Add mask on data loading
