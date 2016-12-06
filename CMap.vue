@@ -27,8 +27,8 @@
     created() { conf = Object.assign({}, initConf, this.mapConf) },
     data() {
       return {
-        width: '100%',
-        height: '550px',
+        width: this.mapConf ? (this.mapConf.width ? this.mapConf.width : '100%') : '100%',
+        height: this.mapConf ? (this.mapConf.height ? this.mapConf.height : '550px') : '550px',
         zoomed: false,
         isLoading: false,
         currentTile: null,

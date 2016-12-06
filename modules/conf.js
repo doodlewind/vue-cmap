@@ -2,7 +2,7 @@ export default {
   colors: ['#800026', '#BD0026', '#E31A1C', '#FC4E2A', '#FD8D3C', '#FEB24C', '#FED976', '#FFEDA0'],
   scale: null,
   hasCityView: true,
-  hasTileLayer: true,
+  hasTileLayer: false,
   hasZoomControl: true,
   countryBounds: [[18, 72], [54, 137]],
   tileStyle: {
